@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name :"
+        android:textColor="@color/colorPrimary"
+        android:padding="8dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="20dp"
+        android:layout_marginTop="90dp"/>
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter your Name"
+        android:textColor="@color/colorPrimary"
+        android:padding="5dp"
+        android:layout_toEndOf="@id/tV1"
+        android:layout_alignParentRight="true"
+        android:textSize="20dp"
+        android:layout_marginTop="90dp"
+        />
+
+    <TextView
+        android:id="@+id/tV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tV1"
+        android:text="Age :"
+        android:textColor="@color/colorPrimary"
+        android:padding="8dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/eT2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+
+        android:hint="Enter your Age"
+        android:textColor="@color/colorPrimary"
+        android:padding="5dp"
+        android:layout_toEndOf="@id/tV2"
+        android:layout_below="@id/tV1"
+        android:layout_alignParentRight="true"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tV2"
+        android:text="Salary :"
+        android:textColor="@color/colorPrimary"
+        android:padding="8dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/eT3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+
+        android:hint="Enter your Salary"
+        android:textColor="@color/colorPrimary"
+        android:padding="5dp"
+        android:layout_toEndOf="@id/tV3"
+        android:layout_below="@id/tV2"
+        android:layout_alignParentRight="true"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:id="@+id/tV6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tV3"
+        android:text="Image :"
+        android:textColor="@color/colorPrimary"
+        android:padding="8dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:id="@+id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@id/tV3"
+
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        android:padding="8dp"
+        android:src="@mipmap/ic_launcher" />
+
+
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Data"
+
+        android:layout_below="@id/tV6"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Data Via Gson + Image"
+        android:textSize="25dp"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tV5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@id/bt"
+        android:hint="Server Response"
+        android:padding="5dp"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@android:color/holo_green_light" />
+
+
+
+
+</RelativeLayout>
